@@ -1,2 +1,2 @@
 # Place
-PlaceCo Repository
+PlaceCo se veut une application à destination des résidences privées 
