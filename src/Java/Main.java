@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		// Code du Main main main
+		Fenetre f1 = new Fenetre();
 	}
 
 }

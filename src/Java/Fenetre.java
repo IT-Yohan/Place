@@ -1,23 +1,27 @@
 package Java;
 
 import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.JPanel;
 
-public class Fenetre {
+public class Fenetre extends JFrame{
 	
-  public static void main(String[] args){
-
+	public Fenetre() {
+		
     JFrame fenetre = new JFrame();
-                
-    //Définit un titre pour notre fenêtre
-    fenetre.setTitle("Place - Connexion");
-    //Définit sa taille : 400 pixels de large et 100 pixels de haut
-    fenetre.setSize(1400, 800);
-    //Nous demandons maintenant à notre objet de se positionner au centre
-    fenetre.setLocationRelativeTo(null);
-    //Termine le processus lorsqu'on clique sur la croix rouge
-    fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    //Et enfin, la rendre visible
+    			
+    fenetre.setTitle("Place - Connexion"); //Définit un titre pour notre fenêtre
+    fenetre.setSize(1400, 800); //Définit sa taille : 400 pixels de large et 100 pixels de haut		
+    fenetre.setLocationRelativeTo(null); //Nous demandons maintenant à notre objet de se positionner au centre
+    fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Termine le processus lorsqu'on clique sur la croix rouge
+    fenetre.setVisible(true); //Et enfin, la rendre visible  
     
-    fenetre.setVisible(true);
-  }       
+    JPanel Formulaire = new JPanel(); // Création du JPanel nécéssaire à l'affichage des trucs 
+    
+    JTextField container = new JTextField(); // création du formulaire
+	Formulaire.setColumns(10); 
+	container.add(Formulaire); // on add le form au jpanel
+	}
+	
 }
